@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="../bower_components/jquery-throttle-debounce/jquery.ba-throttle-debounce.js"></script>
+        <script type="text/javascript" src="../Library/PathCollapser.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("[data-collapsible]").collapsePath(["/", "\\", "_"]);
+            });
+        </script>
+    </head>
+    <body>
+        <div data-collapsible style="white-space: nowrap; overflow: hidden; width: 50%; border: 1px solid orange; padding: 40px; margin: 80px; font-size: 30px;">
+            Foo/BlibBlubBlamBar/BazFoo/Bar/BazDingDongFooBlam/Yeah!
+        </div>
+        <div data-collapsible style="white-space: nowrap; overflow: hidden; width: 50%; border: 1px solid orange; padding: 40px; margin: 80px; font-size: 30px;">
+            Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest
+        </div>
+        <div data-collapsible style="white-space: nowrap; overflow: hidden; width: 50%; border: 1px solid orange; padding: 40px; margin: 80px; font-size: 30px;">
+            Symfony\Component\HttpKernel\DependencyInjection\ContainerAwareHttpKernel::handle
+        </div>
+        <div data-collapsible style="white-space: nowrap; overflow: hidden; width: 50%; border: 1px solid orange; padding: 40px; margin: 80px; font-size: 30px;">
+            Symfony\Component\EventDispatcher\ContainerAwareEventDispatcher::getListeners
+        </div>
+    </body>
+</html>
